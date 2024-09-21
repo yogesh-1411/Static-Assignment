@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh_Account_Opening_Form</title>
+    <style>
+        .main {
+            background-color: ghostwhite;
+            margin: auto;
+            padding: 20px;
+            width: 600px;
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .main:hover {
+            box-shadow: 0 0 10px black;
+        }
+
+        .header1 {
+            text-decoration: underline;
+            float: left;
+        }
+
+        .header2 {
+            margin-left: 400px;
+        }
+
+        .name input {
+            height: 30px;
+            margin-right: 20px;
+        }
+
+
+        .s1 {
+            display: flex;
+            column-gap: 30px;
+        }
+
+        .dob input {
+            height: 30px;
+            width: 170px;
+        }
+
+        .aadhaar input {
+            height: 30px;
+            width: 370px;
+        }
+
+        .s2 {
+            display: flex;
+            column-gap: 25px;
+        }
+
+        .mn input {
+            height: 30px;
+            width: 170px;
+        }
+
+        .telephoneno input {
+            height: 30px;
+            width: 170px;
+        }
+
+        .email input {
+            height: 30px;
+            width: 170px;
+        }
+
+        .address input {
+            height: 30px;
+            width: 580px;
+        }
+
+        .s3 {
+            display: flex;
+            column-gap: 30px;
+        }
+
+        .s3 input {
+            height: 30px;
+            width: 270px;
+        }
+
+        .s4 {
+            display: flex;
+            column-gap: 30px;
+        }
+
+        #accounttype {
+            width: 275px;
+            height: 40px;
+        }
+
+        #accountcategory {
+            width: 275px;
+            height: 40px;
+        }
+
+        .monthlysalary input {
+            height: 30px;
+            width: 270px;
+        }
+
+        .monthlysalary {
+            float: left;
+        }
+
+        .signature {
+            height: 130px;
+            width: 100px;
+            margin-left: 470px;
+            text-align: center;
+        }
+
+        input:hover {
+            border-color: black;
+            border-radius: 2px;
+            box-shadow: 0 0 3px black;
+        }
+
+        select:hover {
+            border-color: black;
+            border-radius: 2px;
+            box-shadow: 0 0 3px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header1">
+            <h1>Account<br>Opening Form</h1>
+        </div>
+        <div class="header2">
+            <p>AD.Ambani's Bank <br>
+                (555) 123-45678 <br>
+                www.ambanibank.com <br>
+                123 Street, Cityville.</p>
+        </div><br>
+        <hr>
+        <div>
+            <form action="" autocomplete="off">
+                <div class="name">
+                    <label for="">Full Name</label><br>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Middle Name">
+                    <input type="text" placeholder="Last Name">
+                </div><br>
+                <div class="s1">
+                    <div class="dob">
+                        <label for="">Date of Birth</label><br>
+                        <input type="date">
+                    </div>
+                    <div class="aadhaar">
+                        <label for="Aadhaar">Aadhaar Card No.</label><br>
+                        <input type="text" maxlength="12" placeholder="0000-0000-0000">
+                    </div>
+                </div><br>
+                <div class="s2">
+                    <div class="mn">
+                        <label for="">Mother's Name</label><br>
+                        <input type="text" placeholder="Mother Name">
+                    </div>
+                    <div class="telephoneno">
+                        <label for="">Telephone No.</label><br>
+                        <input type="text" maxlength="10" placeholder="Valid Phone Number">
+                    </div>
+                    <div class="email">
+                        <label for="">Email</label><br>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                </div><br>
+                <div class="address">
+                    <label for="Address">Address</label><br>
+                    <input type="text" placeholder="Street Address"><br>
+                </div><br>
+                <div class="s3">
+                    <div>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="State"><br>
+                    </div>
+                </div><br>
+                <div class="s4">
+                    <div>
+                        <label for="accounttype">Account Type</label><br>
+                        <select name="" id="accounttype">
+                            <option value="0">Select Account Type</option>
+                            <option value="1">Current Account</option>
+                            <option value="2">Savings Account</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="accountcategory">Account Category</label><br>
+                        <select name="" id="accountcategory">
+                            <option value="0">Select Account Category</option>
+                            <option value="1">Premium</option>
+                            <option value="2">Gold</option>
+                            <option value="3">Silver</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="monthlysalary">
+                    <label for="">Monthly Salary</label><br>
+                    <input type="text" maxlength="10"><br>
+                </div><br>
+                <div class="signature">
+                    <div>
+                        <p>Date</p>
+                    </div><br>
+                    <div>
+                        <p>Signature</p>
+                        <hr>
+                        <p>Your Name</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
